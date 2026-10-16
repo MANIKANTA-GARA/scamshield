@@ -1,0 +1,21 @@
+{
+  "name": "scamshield-ai-workspace",
+  "version": "1.0.0",
+  "description": "ScamShield AI - Offline Android & Web Scam Detection Assistant with Local Llama",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix client run dev",
+    "start": "npm --prefix client run dev",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "preview": "npm --prefix client run preview",
+    "test:local": "node tests/local-detection-tests.cjs",
+    "test:android": "node tests/android-offline-tests.cjs",
+    "test:api": "node tests/automated-tests.cjs",
+    "test:automatic": "node tests/automatic-detection-tests.cjs",
+    "test": "node tests/local-detection-tests.cjs && node tests/android-offline-tests.cjs"
+  }
+}
